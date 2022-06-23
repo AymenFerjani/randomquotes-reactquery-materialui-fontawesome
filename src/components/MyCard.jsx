@@ -7,10 +7,10 @@ import CardActions from "@mui/material/CardActions";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 
-import { shadows } from "@mui/system";
+import { shadows } from "@mui/system"; //needed to show the shadow effect on Card
 import { red, grey } from "@mui/material/colors";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //to use the quote-left and quote-right icons
 
 export function MyCard({
   fetching,
@@ -20,6 +20,7 @@ export function MyCard({
   dataImg,
   doUpdate
 }) {
+  //shows the spinner when fetching
   if (fetching) {
     return (
       <Container fixed={true} maxWidth="xs">
@@ -30,6 +31,7 @@ export function MyCard({
     );
   }
 
+  //shows a Card with an error message
   if (error) {
     return (
       <Container fixed={true} maxWidth="xs">
@@ -54,6 +56,7 @@ export function MyCard({
     );
   }
 
+  //shows the Card if all the data is passed
   return (
     <Container fixed={true} maxWidth="xs">
       {quoteText && dataImg && (

@@ -5,11 +5,12 @@ import "./styles.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
+//these imports are needed to use fortawesome free icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
-library.add(fas); //, faTwitter, faFontAwesome);
-
+//default config for react query, this enables a unique fetch when the component is loaded
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
