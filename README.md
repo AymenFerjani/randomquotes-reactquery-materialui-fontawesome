@@ -1,2 +1,25 @@
-# randomquotes-reactquery-materialui-fontawesome
-Created with CodeSandbox
+# Running the App
+
+Either run
+
+```
+npm install
+```
+
+or
+
+```
+yarn install
+```
+
+Then run
+
+```
+npm start
+```
+
+or
+
+```
+yarn start
+```

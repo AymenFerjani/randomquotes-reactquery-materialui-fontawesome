@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#root {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: justify;
+  font-variant: small-caps;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+blockquote span {
+  font-size: 21px;
+}
